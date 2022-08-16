@@ -1,13 +1,12 @@
 let names = [];
       function pushButton() {
+       if (!names.includes(box.value)) {
         names.push(box.value);
         display.innerHTML = names;
         console.log(names);
+        }
 
-      
-      if (names.includes(box.value)) {
-        alert("Name already exists");
-        
-      }
-      
+        else{
+          alert("Name already exists");
+        }
       }

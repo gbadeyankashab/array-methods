@@ -6,7 +6,10 @@ let names = [];
         console.log(names);
         // demo.innerHTML=names;
 
-        if (names.length > 0) {
-          alert ('false');
-        }
+      
+      if (names.includes(box.value)) {
+        alert("Name already exists");
+        
+      }
+      
       }
